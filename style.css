@@ -1,0 +1,173 @@
+/*
+    Colori:
+    color blue: #3535EC;
+    color blue dark: #120945;
+    color gray: #D4D7F5;
+    color-green: #306753;
+    color pink: #DE7EB6;
+    color yellow: #F2AD41;
+    color white: #ffffff;
+*/
+
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+max-width: 100%; 
+}
+
+.fireworks_1 {
+width: 400px;
+position: absolute;
+top: 200px;
+left: -210px;
+z-index: -1;
+}
+
+.fireworks_2 {
+width: 700px;
+position: absolute;
+bottom: -97px;
+right: 58px;
+z-index: -1;
+}
+
+.fireworks_3 {
+width: 300px;
+position: absolute;
+top: -31px;
+left: 850px;
+z-index: -1;  
+}
+
+.fireworks_4 {
+width: 300px;
+position: absolute;
+bottom: 100px;
+left: 850px;
+z-index: -1;    
+}
+
+.fireworks_5 {
+width: 250px;
+position: absolute;
+bottom: 30px;
+left: 850px;
+z-index: -1;     
+}
+
+.fireworks_6 {
+width: 350px;
+position: absolute;
+top: -30px;
+right: 710px;
+z-index: -1;  
+}
+
+html {
+  background-color: #0b004b;
+  background-image: url(the-beautiful-shining-stars-in-the-night-sky.jpg);
+  font-family: "Livvic", sans-serif;
+  line-height: 1;
+}
+
+.container {
+  width: 900px;
+  margin: 32px auto 0 auto;
+}
+
+.xmas-stage {
+  position: relative;
+  height: 600px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.panel {
+  background-color: #02152d96;
+  border: 1px solid rgba(255, 255, 255, 0.252);
+  padding: 50px 30px;
+  padding-top: 20px;
+  border-radius: 8px;
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  margin: 80px auto;
+  position: 50px;
+}
+
+h1 {
+  text-align: center;
+  color:lightgoldenrodyellow;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+p {
+  color: white;
+  font-family: monospace;
+  text-align: center;
+  padding-top: 55px;
+  font-size: 10px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter-block {
+  background-color: black;
+  border: 4px solid white;
+  padding: 30px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+}
+.counter-block:last-child {
+  color: #f2ad41;
+}
+.counter-block-number {
+  font-size: 90px;
+}
+.counter-block-label {
+  font-size: 20px;
+}
+
+
+.firework:hover {
+  animation-name: jingle;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+.light:hover {
+  animation-name: bump;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+/* Animation */
+@keyframes jingle {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes bump {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
